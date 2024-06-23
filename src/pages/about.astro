@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Sobre Mí">
+  <main
+    class="w-full overflow-hidden h-full relative flex flex-col backdrop-blur-md rounded-xl border-2 border-black/45 bg-gradient-to-b from-black/90 via-slate-900/45 to-sky-950/70"
+    transition:name="main"
+  >
+    <div
+      class="w-full h-max flex flex-col items-center md:items-center p-3 text-slate-200"
+    >
+      <h1 class="text-4xl font-bold z-30" transition:name="about">Sobre Mí</h1>
+    </div>
+    <div class="z-30 w-full relative flex-1 drop-shadow-sm flex flex-col items-center px-3 md:items-end justify-center md:translate-y-10">
+        <p class="md:w-1/2">Desarrollador web fullstack enfocado en el mundo de JavaScript. Me caracterizan el compromiso y la habilidad para resolver problemas con perseverancia y eficiencia.</p>
+        <p class="md:w-1/2">En el front me gusta brindar una experiencia cómoda y atractiva al usuario. Utilizando, cuando es posible, view transitions para hacer mas fácil el recorrido por las diferentes vistas de la web.</p>
+    </div>
+    <div
+      class="w-[1200px] flex-[0.7] bg-gradient-to-b via-black to-[#092a52] from-transparent -rotate-[0deg] -translate-x-28 translate-y-10 z-10"
+    >
+    </div>
+    <img
+      src="../../public/perfil.webp"
+      alt="Marcelo Lencina"
+      title="Marcelo Lencina image"
+      class="absolute -left-14 bottom-8 drop-shadow-[-5px_0px_7px_rgba(0,0,0,1)] rotate-[32deg] blur-sm md:blur-none saturate-0 md:saturate-100 scale-150 sm:scale-100"
+    />
+    <a
+      href="./projects"
+      class="z-50 absolute bottom-24 right-6 px-2 font-semibold border rounded-md hover:bg-white hover:text-black"
+      transition:name="projects"
+      >Proyectos</a
+    >
+    <a
+      href="./technologies"
+      class="z-50 absolute bottom-8 right-6 px-2 font-semibold border rounded-md hover:bg-white hover:text-black"
+      transition:name="technologies"
+      >Tecnologías</a
+    >
+    <a
+      href="./"
+      class="z-50 absolute bottom-8 left-6 px-2 font-semibold border rounded-md hover:bg-white hover:text-black"
+      >Inicio</a
+    >
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    max-height: 1080px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
