@@ -1,0 +1,41 @@
+{
+    "projects": [
+        {
+            "title": "Full Stack - Advanced Parking",
+            "description":"Aplicación creada para darle al usuario exclusividad a la hora de buscar un estacionamiento disponible en las zonas más aglomeradas de la ciudad. Brindamos seguridad, estacionamiento 100% asegurado en la reserva y con beneficios adicionales exclusivos.",
+            "image": "",
+            "date": "May. 2024 - Jun. 2024",
+            "deploy": "https://advanced-parking.vercel.app/",
+            "repository": "",
+            "technologies": ["TypeScript", "Next", "Tailwind", "Nest", "JWT", "Cloudinary", "Bcrypt", "Swagger", "PostgreSQL", "TypeORM"]
+        },
+        {
+            "title": "Back End- ecommerce-MLMarce",
+            "description":"Aplicación de back-end para e-commerce, con funcionalidad para realizar CRUD de usuarios, productos y ordenes de compra. Además, cuenta con una documentación detallada (Open API).",
+            "image": "",
+            "date": "Abr. 2024 - May. 2024",
+            "deploy": "",
+            "repository": "https://github.com/MLMarce/ecommerce-MLMarce-public",
+            "technologies": ["TypeScript", "Nest", "JWT", "Cloudinary", "Bcrypt", "Swagger", "PostgreSQL", "TypeORM"]
+        },
+        {
+            "title": "Full Stack- ChocoArte",
+            "description":"Aplicación para gentionar turnos en una cafetería. Permite el registro/inicio de sesión de usuarios, realizar reservas, ver una lista con las reservas, cerrar sesión.",
+            "image": "",
+            "date": "Mar. 2024 - Abr. 2024",
+            "deploy": "",
+            "repository": "https://github.com/MLMarce/ChocoArte-Appointments",
+            "technologies": ["JavaScript", "React", "HTML","CSS Modules", "Node","TypeScript", "Express", "JWT", "Swagger", "PostgreSQL", "TypeORM"]
+        },
+        {
+            "title": "Full Stack- Enkinema",
+            "description":"Aplicación que tiene como objetivo mostrar y reproducir películas, con diseño responsive para que el usuario tenga una buena experiencia tanto en mobile como en desktop. Además, incluye la posibilidad de agregar peliculas a la base de datos de la aplicación desde una vista dedicada a ello.",
+            "image": "",
+            "date": "Feb. 2024 - Mar. 2024",
+            "deploy": "",
+            "repository": "https://github.com/MLMarce/Enkinema-FullStack",
+            "technologies": ["JavaScript", "Bootstrap", "HTML","CSS Modules", "Node", "Express", "MongoDB", "Mongoose"]
+        }
+    ],
+    "technologies":["TypeScript", "JavaScript", "Express", "React", "Astro", "Nest", "Node", "Git", "MongoDB", "Mongoose", "PostgreSQL", "TypeORM"]
+}

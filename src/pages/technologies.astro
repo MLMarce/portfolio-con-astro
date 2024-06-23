@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import * as data from '../data.json'
+
+const {technologies} = data
 ---
 
 <Layout title="Proyectos">
@@ -12,8 +15,17 @@ import Layout from "../layouts/Layout.astro";
     >
       <h1 class="text-4xl font-bold z-30 drop-shadow-sm" transition:name="technologies">Tecnologías</h1>
     </div>
+    <div class="z-30 w-full h-full relative flex-1 flex justify-center md:justify-end drop-shadow-sm translate-y-14 md:translate-y-10">
+        <div class="w-full h-full md:w-1/2 flex flex-wrap-reverse items-center justify-center gap-2">
+            {
+                technologies.map(technology => (
+                    <b class="w-max h-max text-md px-2 border-slate-800/55 bg-gradient-to-b text-gray-200 rounded-lg">{technology}</b>
+                ))
+            }
+        </div>
+    </div>
     <div
-      class="w-[1200px] h-80 bg-gradient-to-b via-black to-[#092a52] from-transparent -rotate-[0deg] -translate-x-28 translate-y-28 z-10"
+      class="w-[1200px] flex-[0.7] bg-gradient-to-b via-black to-[#092a52] from-transparent -rotate-[0deg] -translate-x-28 translate-y-6 z-10"
     >
     </div>
     <img
