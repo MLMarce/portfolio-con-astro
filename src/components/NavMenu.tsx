@@ -8,7 +8,7 @@ export default function NavMenu() {
     const visibility = isVisible ? 'flex p-4 bottom-20 rounded-lg w-max h-max' : 'bottom-11 w-0 h-0'
     const topBar = isMenuOpen ? 'rotate-45 translate-y-2' : '';
     const botBar = isMenuOpen ? '-rotate-45 -translate-y-2' : '';
-    const hideBar = isMenuOpen ? 'hidden' : '';
+    const hideBar = isMenuOpen ? 'hidden -translate-y-2' : '';
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -59,7 +59,7 @@ export default function NavMenu() {
                 </div>
                 <div id="botBar" className={`w-full h-1 bg-white rounded-sm transition-all ${botBar}`}>
                 </div>
-                <div id="hiddenBar" className={`w-full h-1 bg-white rounded-sm transition-all ${hideBar}`}>
+                <div id="hiddenBar" className={`w-full h-1 bg-white rounded-sm transition-all duration-500 ${hideBar}`}>
                 </div>
             </button>
         </section>
