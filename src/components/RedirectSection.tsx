@@ -14,7 +14,7 @@ export default function RedirectSection({ page, linkPage, pathLogo, vBox }: { pa
             {redirect && <ConfirmRedirect page={page} linkPage={linkPage} setRedirect={setRedirect} svg={pathLogo} vBox={vBox}/>}
             <button
                 onClick={handleClick}
-                className=" px-2 w-full font-semibold border rounded-md hover:bg-white hover:text-black"
+                className=" px-2 w-full font-semibold border backdrop-blur-lg rounded-md hover:bg-white hover:text-black"
             >{page}</button>
         </div>
     )

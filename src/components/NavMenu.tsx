@@ -5,7 +5,7 @@ export default function NavMenu() {
     const [isVisible, setIsVisible] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    const visibility = isVisible ? 'flex p-4 bottom-20 rounded-lg w-max' : 'bottom-11 w-0 h-0'
+    const visibility = isVisible ? 'flex p-4 bottom-20 rounded-lg w-max h-max' : 'bottom-11 w-0 h-0'
     const topBar = isMenuOpen ? 'rotate-45 translate-y-2' : '';
     const botBar = isMenuOpen ? '-rotate-45 -translate-y-2' : '';
     const hideBar = isMenuOpen ? 'hidden' : '';
