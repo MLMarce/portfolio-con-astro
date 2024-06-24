@@ -1,8 +1,6 @@
 import type { Dispatch, ReactNode, SetStateAction } from "react"
 
 export default function ConfirmRedirect({ page, linkPage, setRedirect, svg, vBox }: { page: string, linkPage: string, setRedirect: Dispatch<SetStateAction<boolean>>, svg: string, vBox: string }) {
-    const logo = svg
-
     const handleClick = () => {
         setRedirect(false)
     }
@@ -15,7 +13,7 @@ export default function ConfirmRedirect({ page, linkPage, setRedirect, svg, vBox
             <p className="text-md font-semibold text-pretty text-center drop-shadow-md">Estás a punto de dirigirte a {page}</p>
             <span>¿Deseas continuar?</span>
             <div className="w-full flex justify-around items-center">
-                <a href={linkPage} target="_blank" className="w-1/3 py-1 text-center font-bold backdrop-blur-xl hover:bg-white hover:text-[#193a59] border-2 border-gray-300 hover:border-[#193a59] hover:drop-shadow-lg rounded-lg">Si</a>
+                <a onClick={handleClick} href={linkPage} target="_blank" className="w-1/3 py-1 text-center font-bold backdrop-blur-xl hover:bg-white hover:text-[#193a59] border-2 border-gray-300 hover:border-[#193a59] hover:drop-shadow-lg rounded-lg">Si</a>
                 <button onClick={handleClick} className="w-1/3 py-1 text-center font-bold backdrop-blur-xl hover:bg-white hover:text-[#193a59] border-2 border-gray-300 hover:border-[#193a59] hover:drop-shadow-lg rounded-lg">No</button>
             </div>
         </section>
