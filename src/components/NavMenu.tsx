@@ -5,7 +5,7 @@ export default function NavMenu() {
     const [isVisible, setIsVisible] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    const visibility = isVisible ? 'flex p-4 bottom-20 rounded-lg w-max h-max' : 'bottom-11 w-0 h-0'
+    const visibility = isVisible ? 'flex p-4 bottom-20 rounded-lg w-[50vw] h-[50vh]' : 'bottom-11 h-0'
     const topBar = isMenuOpen ? 'rotate-45 translate-y-2' : '';
     const botBar = isMenuOpen ? '-rotate-45 -translate-y-2' : '';
     const hideBar = isMenuOpen ? 'hidden -translate-y-2' : '';
@@ -19,19 +19,19 @@ export default function NavMenu() {
         <section className="z-50 fixed bottom-8 right-6 flex flex-col items-end">
             <nav
                 id="nav"
-                className={`${visibility} flex-col w-max overflow-hidden right-10  gap-3 absolute transition-all bg-gradient-to-b`}
+                className={`${visibility} flex-col overflow-auto right-10 justify-around absolute transition-all  bg-gradient-to-b`}
             >
                 <a
                     href="/about"
-                    className="px-2 font-semibold border rounded-md hover:bg-white hover:text-black backdrop-blur-sm text-center"
+                    className="p-2 font-semibold border rounded-md hover:bg-white hover:text-black backdrop-blur-sm text-center"
                 >Sobre Mí</a>
                 <a
                     href="/projects"
-                    className="px-2 font-semibold border rounded-md hover:bg-white hover:text-black backdrop-blur-sm text-center"
+                    className="p-2 font-semibold border rounded-md hover:bg-white hover:text-black backdrop-blur-sm text-center"
                 >Proyectos</a>
                 <a
                     href="/technologies"
-                    className="px-2 font-semibold border rounded-md hover:bg-white hover:text-black backdrop-blur-sm text-center"
+                    className="p-2 font-semibold border rounded-md hover:bg-white hover:text-black backdrop-blur-sm text-center"
                 >Tecnologías</a>
                 <RedirectSection
                     page="GitHub"
@@ -48,7 +48,7 @@ export default function NavMenu() {
                 />
                 <a
                     href="/"
-                    className=" px-2 font-semibold border text-center rounded-md hover:bg-white hover:text-black"
+                    className=" p-2 font-semibold border text-center rounded-md hover:bg-white hover:text-black"
                 >Inicio</a>
             </nav>
             <button
